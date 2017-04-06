@@ -16,6 +16,7 @@ if [ "$selected" == 'addwww' ]; then
 	mkdir -p /home/$domain/log;
 	mkdir -p /home/$domain/tmp/session;
 	chown -R nginx:nginx /home/$domain
+
     cat > /etc/nginx/conf.d/$domain.conf <<EOF
 server {
  listen 80;
